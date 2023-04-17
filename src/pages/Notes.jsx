@@ -46,7 +46,7 @@ const Notes = ({ notes }) => {
                 </button>
             </header>
             <div className='notes__container'>
-                {filteredNotes.length == 0 && (
+                {filteredNotes.length === 0 && (
                     <p className='empty__notes'>Notes NOT Found</p>
                 )}
                 {filteredNotes.map((note) => (
