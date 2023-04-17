@@ -17,10 +17,11 @@ const Notes = ({ notes }) => {
                 if (note.title.toLowerCase().match(text.toLowerCase())) {
                     return notes;
                 }
+                return true;
             })
         );
     };
-
+    // eslint-disable-next-line
     useEffect(handleSearch, [text]);
 
     return (
